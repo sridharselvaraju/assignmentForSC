@@ -1,0 +1,12 @@
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.0.xsd">
+
+  <changeSet author="SridharSelvaraju" id="001_create_seq_proc">
+    <sqlFile path="sql/pg/001_create_seq_proc.sql" endDelimiter="/" relativeToChangelogFile="true"/>
+  </changeSet>
+
+  <changeSet author="SridharSelvaraju" id="002_pg_flat">
+    <sqlFile path="sql/pg/002_pg_flat.sql" relativeToChangelogFile="true"/>
+  </changeSet>
+</databaseChangeLog>
